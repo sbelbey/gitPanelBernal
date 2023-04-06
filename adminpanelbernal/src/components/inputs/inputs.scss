@@ -1,0 +1,48 @@
+.inputs{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  .formLabel{
+    color: #f9d615;
+    font-size: 16px;
+  }
+
+  .formInput{
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+
+    &:focus-visible{
+      outline: none;
+      border-bottom: 1px solid #f9d615;
+      cursor: text;
+      caret-color: #f9d615;   
+    }
+
+    &::placeholder{
+      color: white;
+      font-weight: smaller;
+    }
+
+    
+  }
+  span {
+    font-size: 12px !important;
+    padding: 3px;
+    color: #f9d615;
+    width: 70%;
+    display: none;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid #f9d615;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
+}
